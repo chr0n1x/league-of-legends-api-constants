@@ -2,6 +2,7 @@
     "name": "league-of-legends-api/constants",
     "description": "PHP API wrapper for the RiotAPI constants",
     "license": "MIT",
+    "homepage": "https://developer.riotgames.com/docs/game-constants",
     "authors": [
         {
             "name": "Kevin Ran",
