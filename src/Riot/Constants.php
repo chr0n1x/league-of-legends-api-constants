@@ -4,6 +4,19 @@ namespace Riot;
 
 class Constants {
 
+  public function getMessageForApiResponse( $code ) {
+
+    $codeMap = array(
+        401 => 'Unauthorized',
+        500 => 'Internal server error',
+        503 => 'Service unavailable',
+        400 => 'Bad request',
+    );
+
+    return ( isset( $codeMap[ $code ] ) ) ? $codeMap[ $code ] : '';
+
+  } // getMessageForApiResponse
+
   public function getSubGameTypes() {
 
     return array(
